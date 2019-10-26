@@ -79,10 +79,14 @@ app.js
 
 +++
 
-- secret: 'keyboard cat'   秘密キーとなるテキストで「ハッシュ」の計算に用いられる
-- resave: false            セッションストアというところに強制的に値を保存する
-- saveUninitialized: false 初期化されていない値を強制的に保存する
-- cookie: { maxAge: 60 \* 60 \* 1000 } クッキーの保管時間を設定している
+- secret: 'keyboard cat'
+  - 秘密キーとなるテキストで「ハッシュ」の計算に用いられる
+- resave: false
+  - セッションストアというところに強制的に値を保存する
+- saveUninitialized: false
+  - 初期化されていない値を強制的に保存する
+- cookie: { maxAge: 60 \* 60 \* 1000 }
+  - クッキーの保管時間を設定している
 
 +++
 
@@ -91,11 +95,15 @@ app.js
 +++?code=5-06.js
 hello.js
 
+@[17,18](セッションは、sessionにmessageに値を保管している)
+@[6,7,8](値がundefinedかチェックして、メッセージを作成している)
 
 +++
-
 ![output4](5-06-1.png)
++++
 ![output5](5-06-2.png)
-![output6](5-06-3.png)
+### 時間が経過してから/helloにアクセスすると...
 
++++
+![output6](5-06-3.png)
 +++
