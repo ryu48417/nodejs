@@ -94,6 +94,8 @@ hello.js
 
 +++
 
-![output4](5-06.png)
+![output4](5-06-1.png)
+![output5](5-06-2.png)
+![output6](5-06-3.png)
 
 +++
