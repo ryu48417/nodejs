@@ -36,6 +36,8 @@ module.exports = router;
 
 +++?code=5-01.js
 
+@[5,6](query内からnameとmailの値を取り出す)
+
 +++
 
 ![output](5-01.png)
