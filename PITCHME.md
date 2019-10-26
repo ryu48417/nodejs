@@ -16,30 +16,12 @@
 
 +++
 
-``` javascript
-var express = require('express');
-var router = express.Router();
-
-router.get('/',(req, res, next) => {
-    var name = req.query.name;
-    var mail = req.query.mail;
-    var data = {
-        title: 'Hello!',
-        content: 'あなたの名前は、' + name + '。<br>' +
-            'メールアドレスは、' + mail + 'です。'
-    };
-    res.render('hello', data);
-});
-
-module.exports = router;
-```
-
 +++?code=5-01.js
-
-@[5,6](query内からnameとmailの値を取り出す)
+hello.js
+@[5,6](queryからnameとmailの値を取り出す)
 
 +++
 
-![output](5-01.png)
+![output1](5-01.png)
 
 +++
