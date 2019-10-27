@@ -142,5 +142,53 @@ hello.js
 
 ### ajaxの処理を用意する
 
++++?code=5-07.js
+ajax.js
+
+@[4,5,6,7,8](JSON形式のデータ)
+@[10,11,12,13](クエリーパラメーターの値で、データを出力)
+
++++?code=5-08.js
+app.js
+
+@[11,24](ajax.jsをロードして、利用できる状態にしている)
+
 +++
 
+###  jQueryでAjaxを利用する
+
++++?code=5-09.ejs
+hello.ejs
+
+@[8](jQueryを利用できるようにしている)
+@[11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26](jQueryでJavaScriptの処理をしている)
+
++++
+
+```javascript
+$.getJSON("/ajax?id=" + n, function(json){・・・});
+```
+第１引数のアドレスにAjax通信し、第２引数でコールバック関数を実行する
+
+コールバック関数の引数にあるjsonがJavaScriptオブジェクトになっていて、
+そこから必要な値を取り出して利用する
+
++++
+![output7](5-09-1.png)
++++
+![output8](5-09-2.png)
++++
+![output9](5-09-3.png)
++++
+
+### 最新版jQueryを使うには？
+
++++
+
+jQueryをインストールして、「jquery.min.js」というスクリプトファイルを利用する
+```javascript
+<script src="/javascripts/jquery.min.js"></script>
+```
+このようなタグをEJSのテンプレートファイル内に用意すると、Webページから利用できる
+
++++
