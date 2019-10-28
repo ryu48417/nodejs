@@ -253,7 +253,7 @@ hello.js
 - RSSデータを利用するために必要なモジュールは？
   - 「HTTP、HTTPS」、「XML2JS」 |
 - HTTPSのポート番号は？
-  - 443番、HTTPは８０番
+  - 443番、HTTPは８０番 |
 
 ---
 
