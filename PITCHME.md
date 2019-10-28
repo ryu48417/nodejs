@@ -166,7 +166,6 @@ app.js
 hello.ejs
 
 @[8](jQueryを利用できるようにしている)
-@[11,12,13,14,23](jQueryでJavaScriptの処理をしている)
 
 +++
 
