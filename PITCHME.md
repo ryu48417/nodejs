@@ -235,7 +235,7 @@ hello.ejs
     <li><a href="<%=obj.link %>">
             <%= obj.title %></a></li>
 ```
-@[16,17,18](ニュースを表示するための処理)
+ニュースを表示するための処理
 
 +++?code=5-12.js
 hello.js
