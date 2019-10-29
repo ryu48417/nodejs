@@ -225,9 +225,15 @@ Ajaxでは自サイトでしかアクセスできないので、一般のWebサ�
 
 +++?code=5-11.ejs
 hello.ejs
++++
 
 ```javascript
 <% if (content != null) { %>
+    <ol>
+    <% for(var i in content) { %>
+    <% var obj = content[i]; %>
+    <li><a href="<%=obj.link %>">
+            <%= obj.title %></a></li>
 ```
 @[16,17,18](ニュースを表示するための処理)
 
