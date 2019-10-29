@@ -226,6 +226,9 @@ Ajaxでは自サイトでしかアクセスできないので、一般のWebサ�
 +++?code=5-11.ejs
 hello.ejs
 
+```javascript
+<% if (content != null) { %>
+```
 @[16,17,18](ニュースを表示するための処理)
 
 +++?code=5-12.js
